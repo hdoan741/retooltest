@@ -1,0 +1,49 @@
+Arguments: 
+  /Users/hdoan/.nvm/versions/node/v18.17.1/bin/node /Users/hdoan/.nvm/versions/node/v18.17.1/bin/yarn test
+
+PATH: 
+  /opt/homebrew/opt/kubernetes-cli/bin:/usr/local/opt/openjdk/libexec/openjdk.jdk/Contents/Home/bin:/Users/hdoan/.nvm/versions/node/v18.17.1/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.17.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Users/hdoan/src/retooltest/package.json: Unexpected token / in JSON at position 92
+      at JSON.parse (<anonymous>)
+      at /Users/hdoan/.nvm/versions/node/v18.17.1/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/Users/hdoan/.nvm/versions/node/v18.17.1/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /Users/hdoan/.nvm/versions/node/v18.17.1/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "test_retool",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+  //  "type": "module",
+    "scripts": {
+      "build": "esbuild ./index.ts --bundle --outdir=dist --packages=external --platform=node --format=cjs --sourcemap",
+      "test": "node --experimental-modules ./dist/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "esbuild": "^0.19.10",
+      "retoolrpc": "^0.1.1",
+      "typescript": "^5.3.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

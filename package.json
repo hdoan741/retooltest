@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "test": "esbuild ./index.ts --bundle --outdir=dist --packages=external --platform=node --format=esm --sourcemap && node ./dist/index.js"
+    "build": "esbuild ./index.ts --bundle --outdir=dist --packages=external --platform=node --format=cjs --sourcemap",
+    "test": "node --experimental-modules ./dist/index.js"
   },
   "keywords": [],
   "author": "",

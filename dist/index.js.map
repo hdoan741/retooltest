@@ -2,6 +2,6 @@
   "version": 3,
   "sources": ["../index.ts"],
   "sourcesContent": ["import { RetoolRPC } from \"retoolrpc\";\n\n// none of this matters, its just to make sure that typescript\n// does not optimize away the import\nconst rpc = new RetoolRPC({\n  apiToken: \"your-api-token-here\", // Replace this token with your API token\n  host: \"http://localhost:3000/\", // Replace this host with your host\n  resourceId: \"resource-id\", // Replace this resource ID with your ID\n  environmentName: \"production\", // Replace this environment name with your name (defaults to production)\n  pollingIntervalMs: 1000, // The polling interval for the RPC\n  version: \"0.0.1\", // An optional version number for functions schemas\n  logLevel: \"info\", // Change to 'debug' for verbose logging or use own logger implementation by passing a logger param\n});\n"],
-  "mappings": ";AAAA,SAAS,iBAAiB;AAI1B,IAAM,MAAM,IAAI,UAAU;AAAA,EACxB,UAAU;AAAA;AAAA,EACV,MAAM;AAAA;AAAA,EACN,YAAY;AAAA;AAAA,EACZ,iBAAiB;AAAA;AAAA,EACjB,mBAAmB;AAAA;AAAA,EACnB,SAAS;AAAA;AAAA,EACT,UAAU;AAAA;AACZ,CAAC;",
+  "mappings": ";AAAA,uBAA0B;AAI1B,IAAM,MAAM,IAAI,2BAAU;AAAA,EACxB,UAAU;AAAA;AAAA,EACV,MAAM;AAAA;AAAA,EACN,YAAY;AAAA;AAAA,EACZ,iBAAiB;AAAA;AAAA,EACjB,mBAAmB;AAAA;AAAA,EACnB,SAAS;AAAA;AAAA,EACT,UAAU;AAAA;AACZ,CAAC;",
   "names": []
 }
