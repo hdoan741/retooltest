@@ -1,6 +1,6 @@
 // index.ts
-var import_retoolrpc = require("retoolrpc");
-var rpc = new import_retoolrpc.RetoolRPC({
+import * as retool from "retoolrpc";
+var rpc = new retool.RetoolRPC({
   apiToken: "your-api-token-here",
   // Replace this token with your API token
   host: "http://localhost:3000/",

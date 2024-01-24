@@ -1,8 +1,8 @@
-import { RetoolRPC } from "retoolrpc";
+import * as retool from "retoolrpc";
 
 // none of this matters, its just to make sure that typescript
 // does not optimize away the import
-const rpc = new RetoolRPC({
+const rpc = new retool.RetoolRPC({
   apiToken: "your-api-token-here", // Replace this token with your API token
   host: "http://localhost:3000/", // Replace this host with your host
   resourceId: "resource-id", // Replace this resource ID with your ID
